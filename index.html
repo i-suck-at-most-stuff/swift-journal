@@ -12,9 +12,21 @@
         <h1>My Swift Programming Journey</h1>
         <button id="toggle-mode"><i class="fas fa-moon"></i> Toggle Dark Mode</button>
     </header>
-    
+     <div id="search-container">
+            <input type="text" id="search-bar" placeholder="Search posts...">
+            <select id="type-filter">
+                <option value="all">All Types</option>
+                <option value="journal">Journal Entry</option>
+              <option value="decript">Code Description</option>
+                <option value="code">Code Snippet</option>
+                <option value="media">Image/Video</option>
+                <option value="project">Project</option>
+            </select>
+           
+        </div>
     <main>
-    <section class="post">
+      
+    <section class="post code">
         <h2>Understanding Variables in Swift</h2>
         <div class="content">
             <p>Variables in Swift are used to store information that can be used and changed throughout your code. You define a variable using the <code>var</code> keyword followed by a name and a type. For example:</p>
@@ -23,7 +35,7 @@
         </div>
     </section>
 
-    <section class="post">
+    <section class="post code">
         <h2>Using Constants with <code>let</code></h2>
         <div class="content">
             <p>Constants are similar to variables but their values cannot be changed once they are set. Use the <code>let</code> keyword to define a constant. For example:</p>
@@ -32,7 +44,7 @@
         </div>
     </section>
 
-    <section class="post">
+    <section class="post decript">
         <h2>Data Types in Swift</h2>
         <div class="content">
             <p>Swift has various data types to store different kinds of values. Here are some common ones:</p>
@@ -47,21 +59,21 @@
 
    
 
-    <section class="post">
+    <section class="post journal">
         <h2>Journal Entry 2</h2>
         <div class="content">
-            <p>Write your journal entry here...</p>
+            <p></p>
         </div>
     </section>
 
-    <section class="post">
+    <section class="post journal">
         <h2>Journal Entry 3</h2>
         <div class="content">
-            <p>Write your journal entry here...</p>
+            <p></p>
         </div>
     </section>
 
-    <section class="post">
+    <section class="post code">
         <h2>Swift Code Snippet: Simple Arithmetic</h2>
         <div class="content">
             <p>This code snippet demonstrates basic arithmetic operations in Swift:</p>
@@ -75,7 +87,7 @@ let quotient = a / b</code></pre>
         </div>
     </section>
 
-    <section class="post">
+    <section class="post code">
         <h2>Swift Code Snippet: String Concatenation</h2>
         <div class="content">
             <p>This snippet shows how to concatenate strings in Swift:</p>
@@ -86,7 +98,7 @@ let fullName = firstName + " " + lastName</code></pre>
         </div>
     </section>
 
-    <section class="post">
+    <section class="post code">
         <h2>Swift Code Snippet: Conditional Statement</h2>
         <div class="content">
             <p>This example illustrates a simple conditional statement using an if-else structure:</p>
@@ -103,7 +115,7 @@ if score >= 90 {
         </div>
     </section>
 
-    <section class="post">
+    <section class="post code">
         <h2>Swift Code Snippet: Looping with For-In</h2>
         <div class="content">
             <p>This snippet demonstrates a basic loop using the for-in structure:</p>
@@ -115,31 +127,13 @@ for number in numbers {
             <p>This code loops through each element in the <code>numbers</code> array and prints it.</p>
         </div>
     </section>
-       <section class="post">
+       <section class="post journal">
         <h2>First Entry 7/30/24</h2>
         <div class="content">
             <p>Starting my swift programming language journey and want to keep a small journal that i can use to display my thoughts and things that i learn. I hope to keep this updated as I work on more things swift. My main goal is to have a good understanding of the swift programming language a year from now,as i have to balence learning Swift along with Python for my classes at school. </p>
         </div>
     </section>
-       <div id="new-post-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Create New Post</h2>
-            <form id="new-post-form">
-                <label for="post-type">Post Type:</label>
-                <select id="post-type" name="postType">
-                    <option value="text">Text</option>
-                    <option value="image">Image</option>
-                    <option value="code">Code Snippet</option>
-                </select>
-                <label for="post-title">Title:</label>
-                <input type="text" id="post-title" name="title" required>
-                <label for="post-content">Content:</label>
-                <textarea id="post-content" name="content" required></textarea>
-                <button type="submit">Save Post</button>
-            </form>
-        </div>
-    </div>
+       
 </main>
 
     
