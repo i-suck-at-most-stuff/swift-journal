@@ -14,30 +14,134 @@
     </header>
     
     <main>
-        <section class="post">
-            <h2>Code Snippet</h2>
-            <div class="content">
-                <pre><code>/* Swift code example */</code></pre>
-            </div>
-        </section>
-        
-        <section class="post">
-            <h2>Journal Entry</h2>
-            <div class="content">
-                <p>Write your journal entry here...</p>
-            </div>
-        </section>
-        
-        <section class="post">
-            <h2>Project Details</h2>
-            <div class="content">
-                <p>Share your project details here...</p>
-            </div>
-        </section>
-        
-        <!-- Add more posts as needed -->
-        
-    </main>
+    <section class="post">
+        <h2>Understanding Variables in Swift</h2>
+        <div class="content">
+            <p>Variables in Swift are used to store information that can be used and changed throughout your code. You define a variable using the <code>var</code> keyword followed by a name and a type. For example:</p>
+            <pre><code>var greeting: String = "Hello, World!"</code></pre>
+            <p>In this example, <code>greeting</code> is a variable of type <code>String</code>, and it's initially set to "Hello, World!". You can change its value later in the code.</p>
+        </div>
+    </section>
+
+    <section class="post">
+        <h2>Using Constants with <code>let</code></h2>
+        <div class="content">
+            <p>Constants are similar to variables but their values cannot be changed once they are set. Use the <code>let</code> keyword to define a constant. For example:</p>
+            <pre><code>let pi = 3.14159</code></pre>
+            <p>Here, <code>pi</code> is a constant representing the value of π. Once defined, the value of <code>pi</code> cannot be changed, ensuring that it remains constant throughout your code.</p>
+        </div>
+    </section>
+
+    <section class="post">
+        <h2>Data Types in Swift</h2>
+        <div class="content">
+            <p>Swift has various data types to store different kinds of values. Here are some common ones:</p>
+            <ul>
+                <li><strong>Int</strong>: Represents whole numbers, e.g., <code>let age: Int = 25</code></li>
+                <li><strong>Double</strong>: Represents floating-point numbers, e.g., <code>let height: Double = 5.9</code></li>
+                <li><strong>String</strong>: Represents a sequence of characters, e.g., <code>let name: String = "Alice"</code></li>
+                <li><strong>Bool</strong>: Represents a boolean value, either <code>true</code> or <code>false</code>, e.g., <code>let isLoggedIn: Bool = true</code></li>
+            </ul>
+        </div>
+    </section>
+
+   
+
+    <section class="post">
+        <h2>Journal Entry 2</h2>
+        <div class="content">
+            <p>Write your journal entry here...</p>
+        </div>
+    </section>
+
+    <section class="post">
+        <h2>Journal Entry 3</h2>
+        <div class="content">
+            <p>Write your journal entry here...</p>
+        </div>
+    </section>
+
+    <section class="post">
+        <h2>Swift Code Snippet: Simple Arithmetic</h2>
+        <div class="content">
+            <p>This code snippet demonstrates basic arithmetic operations in Swift:</p>
+            <pre><code>let a = 10
+let b = 5
+let sum = a + b
+let difference = a - b
+let product = a * b
+let quotient = a / b</code></pre>
+            <p>This code initializes two integer constants <code>a</code> and <code>b</code>, then calculates their sum, difference, product, and quotient.</p>
+        </div>
+    </section>
+
+    <section class="post">
+        <h2>Swift Code Snippet: String Concatenation</h2>
+        <div class="content">
+            <p>This snippet shows how to concatenate strings in Swift:</p>
+            <pre><code>let firstName = "John"
+let lastName = "Doe"
+let fullName = firstName + " " + lastName</code></pre>
+            <p>Here, two string constants, <code>firstName</code> and <code>lastName</code>, are concatenated to form <code>fullName</code>.</p>
+        </div>
+    </section>
+
+    <section class="post">
+        <h2>Swift Code Snippet: Conditional Statement</h2>
+        <div class="content">
+            <p>This example illustrates a simple conditional statement using an if-else structure:</p>
+            <pre><code>let score = 85
+
+if score >= 90 {
+    print("A")
+} else if score >= 80 {
+    print("B")
+} else {
+    print("C or lower")
+}</code></pre>
+            <p>The code checks the value of <code>score</code> and prints the corresponding grade based on the conditions.</p>
+        </div>
+    </section>
+
+    <section class="post">
+        <h2>Swift Code Snippet: Looping with For-In</h2>
+        <div class="content">
+            <p>This snippet demonstrates a basic loop using the for-in structure:</p>
+            <pre><code>let numbers = [1, 2, 3, 4, 5]
+
+for number in numbers {
+    print(number)
+}</code></pre>
+            <p>This code loops through each element in the <code>numbers</code> array and prints it.</p>
+        </div>
+    </section>
+       <section class="post">
+        <h2>First Entry 7/30/24</h2>
+        <div class="content">
+            <p>Starting my swift programming language journey and want to keep a small journal that i can use to display my thoughts and things that i learn. I hope to keep this updated as I work on more things swift. My main goal is to have a good understanding of the swift programming language a year from now,as i have to balence learning Swift along with Python for my classes at school. </p>
+        </div>
+    </section>
+       <div id="new-post-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create New Post</h2>
+            <form id="new-post-form">
+                <label for="post-type">Post Type:</label>
+                <select id="post-type" name="postType">
+                    <option value="text">Text</option>
+                    <option value="image">Image</option>
+                    <option value="code">Code Snippet</option>
+                </select>
+                <label for="post-title">Title:</label>
+                <input type="text" id="post-title" name="title" required>
+                <label for="post-content">Content:</label>
+                <textarea id="post-content" name="content" required></textarea>
+                <button type="submit">Save Post</button>
+            </form>
+        </div>
+    </div>
+</main>
+
     
     <script src="script.js"></script>
 </body>

@@ -45,6 +45,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .post {
@@ -53,7 +54,9 @@ main {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 15px;
     box-sizing: border-box;
-    flex: 1 1 auto;
+    flex-grow: 1;
+    flex-basis: calc(30% - 20px);
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -80,13 +83,13 @@ code {
 
 @media (max-width: 768px) {
     .post {
-        flex: 1 1 calc(50% - 20px);
+        flex-basis: calc(45% - 20px);
     }
 }
 
 @media (max-width: 480px) {
     .post {
-        flex: 1 1 100%;
+        flex-basis: calc(100% - 20px);
     }
 }
 
@@ -102,4 +105,41 @@ code {
 
 .dark-mode button {
     color: var(--text-light);
+}
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
