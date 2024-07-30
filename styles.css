@@ -26,6 +26,38 @@ header {
     padding: 1em 0;
     text-align: center;
 }
+#search-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#search-bar, #type-filter, #date-filter {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+#search-bar {
+    width: 60%;
+}
+
+#type-filter, #date-filter {
+    width: 20%;
+}
+
+@media (max-width: 768px) {
+    #search-bar, #type-filter, #date-filter {
+        width: 100%;
+    }
+
+    .post {
+        flex: 1 1 100%;
+    }
+}
 
 button {
     background: none;
