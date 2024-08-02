@@ -12,54 +12,162 @@
         <h1>My Swift Programming Journey</h1>
         <button id="toggle-mode"><i class="fas fa-moon"></i> Toggle Dark Mode</button>
     </header>
-     <div id="search-container">
-            <input type="text" id="search-bar" placeholder="Search posts...">
-            <select id="type-filter">
-                <option value="all">All Types</option>
-                <option value="journal">Journal Entry</option>
-              <option value="decript">Code Description</option>
-                <option value="code">Code Snippet</option>
-                <option value="media">Image/Video</option>
-                <option value="project">Project</option>
-            </select>
-           
-        </div>
+
+    <div id="search-container">
+        <input type="text" id="search-bar" placeholder="Search posts...">
+        <select id="type-filter">
+            <option value="all">All Types</option>
+            <option value="journal">Journal Entry</option>
+            <option value="decript">Code Description</option>
+            <option value="code">Code Snippet</option>
+            <option value="media">Image/Video</option>
+            <option value="project">Project</option>
+        </select>
+    </div>
+
     <main>
-      
-    <section class="post code">
-        <h2>Understanding Variables in Swift</h2>
-        <div class="content">
-            <p>Variables in Swift are used to store information that can be used and changed throughout your code. You define a variable using the <code>var</code> keyword followed by a name and a type. For example:</p>
-            <pre><code>var greeting: String = "Hello, World!"</code></pre>
-            <p>In this example, <code>greeting</code> is a variable of type <code>String</code>, and it's initially set to "Hello, World!". You can change its value later in the code.</p>
-        </div>
-    </section>
+        <!-- Existing Content -->
+        <section class="post code">
+            <h2>Understanding Variables in Swift</h2>
+            <div class="content">
+                <p>Variables in Swift are used to store information that can be used and changed throughout your code. You define a variable using the <code>var</code> keyword followed by a name and a type. For example:</p>
+                <pre><code>var greeting: String = "Hello, World!"</code></pre>
+                <p>In this example, <code>greeting</code> is a variable of type <code>String</code>, and it's initially set to "Hello, World!". You can change its value later in the code.</p>
+            </div>
+        </section>
 
-    <section class="post code">
-        <h2>Using Constants with <code>let</code></h2>
-        <div class="content">
-            <p>Constants are similar to variables but their values cannot be changed once they are set. Use the <code>let</code> keyword to define a constant. For example:</p>
-            <pre><code>let pi = 3.14159</code></pre>
-            <p>Here, <code>pi</code> is a constant representing the value of π. Once defined, the value of <code>pi</code> cannot be changed, ensuring that it remains constant throughout your code.</p>
-        </div>
-    </section>
+        <section class="post code">
+            <h2>Using Constants with <code>let</code></h2>
+            <div class="content">
+                <p>Constants are similar to variables but their values cannot be changed once they are set. Use the <code>let</code> keyword to define a constant. For example:</p>
+                <pre><code>let pi = 3.14159</code></pre>
+                <p>Here, <code>pi</code> is a constant representing the value of π. Once defined, the value of <code>pi</code> cannot be changed, ensuring that it remains constant throughout your code.</p>
+            </div>
+        </section>
 
-    <section class="post decript">
-        <h2>Data Types in Swift</h2>
-        <div class="content">
-            <p>Swift has various data types to store different kinds of values. Here are some common ones:</p>
-            <ul>
-                <li><strong>Int</strong>: Represents whole numbers, e.g., <code>let age: Int = 25</code></li>
-                <li><strong>Double</strong>: Represents floating-point numbers, e.g., <code>let height: Double = 5.9</code></li>
-                <li><strong>String</strong>: Represents a sequence of characters, e.g., <code>let name: String = "Alice"</code></li>
-                <li><strong>Bool</strong>: Represents a boolean value, either <code>true</code> or <code>false</code>, e.g., <code>let isLoggedIn: Bool = true</code></li>
-            </ul>
-        </div>
-    </section>
+        <section class="post decript">
+            <h2>Data Types in Swift</h2>
+            <div class="content">
+                <p>Swift has various data types to store different kinds of values. Here are some common ones:</p>
+                <ul>
+                    <li><strong>Int</strong>: Represents whole numbers, e.g., <code>let age: Int = 25</code></li>
+                    <li><strong>Double</strong>: Represents floating-point numbers, e.g., <code>let height: Double = 5.9</code></li>
+                    <li><strong>String</strong>: Represents a sequence of characters, e.g., <code>let name: String = "Alice"</code></li>
+                    <li><strong>Bool</strong>: Represents a boolean value, either <code>true</code> or <code>false</code>, e.g., <code>let isLoggedIn: Bool = true</code></li>
+                </ul>
+            </div>
+        </section>
 
-   
+        <section class="post code">
+            <h2>Swift Code Snippet: Simple Arithmetic</h2>
+            <div class="content">
+                <p>This code snippet demonstrates basic arithmetic operations in Swift:</p>
+                <pre><code>let a = 10
+let b = 5
+let sum = a + b
+let difference = a - b
+let product = a * b
+let quotient = a / b</code></pre>
+                <p>This code initializes two integer constants <code>a</code> and <code>b</code>, then calculates their sum, difference, product, and quotient.</p>
+            </div>
+        </section>
 
-    <section class="post journal">
+        <section class="post code">
+            <h2>Swift Code Snippet: String Concatenation</h2>
+            <div class="content">
+                <p>This snippet shows how to concatenate strings in Swift:</p>
+                <pre><code>let firstName = "John"
+let lastName = "Doe"
+let fullName = firstName + " " + lastName</code></pre>
+                <p>Here, two string constants, <code>firstName</code> and <code>lastName</code>, are concatenated to form <code>fullName</code>.</p>
+            </div>
+        </section>
+
+        <section class="post code">
+            <h2>Swift Code Snippet: Conditional Statement</h2>
+            <div class="content">
+                <p>This example illustrates a simple conditional statement using an if-else structure:</p>
+                <pre><code>let score = 85
+
+if score >= 90 {
+    print("A")
+} else if score >= 80 {
+    print("B")
+} else {
+    print("C or lower")
+}</code></pre>
+                <p>The code checks the value of <code>score</code> and prints the corresponding grade based on the conditions.</p>
+            </div>
+        </section>
+
+        <section class="post code">
+            <h2>Swift Code Snippet: Looping with For-In</h2>
+            <div class="content">
+                <p>This snippet demonstrates a basic loop using the for-in structure:</p>
+                <pre><code>let numbers = [1, 2, 3, 4, 5]
+
+for number in numbers {
+    print(number)
+}</code></pre>
+                <p>This code loops through each element in the <code>numbers</code> array and prints it.</p>
+            </div>
+        </section>
+
+        <!-- New Content -->
+        <section class="post decript">
+            <h2>Optionals in Swift</h2>
+            <div class="content">
+                <p>Optionals in Swift allow variables to have a value or be <code>nil</code>. They are defined using a question mark <code>?</code> after the type. For example:</p>
+                <pre><code>var optionalName: String? = "John Doe"
+optionalName = nil // Now the variable can be nil</code></pre>
+                <p>To safely access the value of an optional, you can use optional binding or optional chaining.</p>
+            </div>
+        </section>
+
+        <section class="post code">
+            <h2>Swift Code Snippet: Optional Binding</h2>
+            <div class="content">
+                <p>Optional binding is a safe way to unwrap an optional value. Here's an example:</p>
+                <pre><code>var optionalName: String? = "John Doe"
+
+if let name = optionalName {
+    print("Hello, \(name)")
+} else {
+    print("No name provided")
+}</code></pre>
+                <p>If <code>optionalName</code> contains a value, it is assigned to <code>name</code> and the code inside the <code>if</code> block runs. Otherwise, the <code>else</code> block is executed.</p>
+            </div>
+        </section>
+
+        <section class="post code">
+            <h2>Swift Code Snippet: Functions</h2>
+            <div class="content">
+                <p>Functions are reusable blocks of code that perform specific tasks. Here's a simple function that adds two numbers:</p>
+                <pre><code>func add(a: Int, b: Int) -> Int {
+    return a + b
+}
+
+let sum = add(a: 5, b: 3)
+print(sum) // Output: 8</code></pre>
+                <p>This function takes two integers as parameters and returns their sum.</p>
+            </div>
+        </section>
+
+        <section class="post code">
+            <h2>Swift Code Snippet: Classes and Structures</h2>
+            <div class="content">
+                <p>Classes and structures are used to define custom data types. Here's an example of a simple structure:</p>
+                <pre><code>struct Person {
+    var firstName: String
+    var lastName: String
+}
+
+let person = Person(firstName: "John", lastName: "Doe")
+print(person.firstName) // Output: John</code></pre>
+                <p>Structures in Swift can have properties and methods, just like classes. The main difference is that structures are value types, while classes are reference types.</p>
+            </div>
+        </section>
+<section class="post journal">
         <h2>Journal Entry 2</h2>
         <div class="content">
             <p></p>
@@ -72,71 +180,143 @@
             <p></p>
         </div>
     </section>
+        <section class="post code">
+            <h2>Swift Code Snippet: Enumerations</h2>
+            <div class="content">
+                <p>Enumerations define a common type for a group of related values and enable you to work with those values in a type-safe way. Here's an example:</p>
+                <pre><code>enum CompassPoint {
+    case north
+    case south
+    case east
+    case west
+}
 
-    <section class="post code">
-        <h2>Swift Code Snippet: Simple Arithmetic</h2>
-        <div class="content">
-            <p>This code snippet demonstrates basic arithmetic operations in Swift:</p>
-            <pre><code>let a = 10
-let b = 5
-let sum = a + b
-let difference = a - b
-let product = a * b
-let quotient = a / b</code></pre>
-            <p>This code initializes two integer constants <code>a</code> and <code>b</code>, then calculates their sum, difference, product, and quotient.</p>
-        </div>
-    </section>
+var direction = CompassPoint.north
+direction = .east // Changing the value of direction</code></pre>
+                <p>Enumerations can also have associated values and methods.</p>
+            </div>
+        </section>
 
-    <section class="post code">
-        <h2>Swift Code Snippet: String Concatenation</h2>
-        <div class="content">
-            <p>This snippet shows how to concatenate strings in Swift:</p>
-            <pre><code>let firstName = "John"
-let lastName = "Doe"
-let fullName = firstName + " " + lastName</code></pre>
-            <p>Here, two string constants, <code>firstName</code> and <code>lastName</code>, are concatenated to form <code>fullName</code>.</p>
-        </div>
-    </section>
+        <section class="post code">
+            <h2>Swift Code Snippet: Protocols</h2>
+            <div class="content">
+                <p>Protocols define a blueprint of methods, properties, and other requirements for a particular task or functionality. Here's an example:</p>
+                <pre><code>protocol Greetable {
+    var name: String { get }
+    func greet()
+}
 
-    <section class="post code">
-        <h2>Swift Code Snippet: Conditional Statement</h2>
-        <div class="content">
-            <p>This example illustrates a simple conditional statement using an if-else structure:</p>
-            <pre><code>let score = 85
+struct Person: Greetable {
+    var name: String
+    func greet() {
+        print("Hello, \(name)")
+    }
+}
 
-if score >= 90 {
-    print("A")
-} else if score >= 80 {
-    print("B")
-} else {
-    print("C or lower")
-}</code></pre>
-            <p>The code checks the value of <code>score</code> and prints the corresponding grade based on the conditions.</p>
-        </div>
-    </section>
-
-    <section class="post code">
-        <h2>Swift Code Snippet: Looping with For-In</h2>
-        <div class="content">
-            <p>This snippet demonstrates a basic loop using the for-in structure:</p>
-            <pre><code>let numbers = [1, 2, 3, 4, 5]
-
-for number in numbers {
-    print(number)
-}</code></pre>
-            <p>This code loops through each element in the <code>numbers</code> array and prints it.</p>
-        </div>
-    </section>
-       <section class="post journal">
+let person = Person(name: "John")
+person.greet() // Output: Hello, John</code></pre>
+                <p>In this example, the <code>Greetable</code> protocol requires a <code>name</code> property and a <code>greet</code> method. The <code>Person</code> structure conforms to this protocol by implementing the required elements.</p>
+            </div>
+        </section>
+<section class="post journal">
         <h2>First Entry 7/30/24</h2>
         <div class="content">
             <p>Starting my swift programming language journey and want to keep a small journal that i can use to display my thoughts and things that i learn. I hope to keep this updated as I work on more things swift. My main goal is to have a good understanding of the swift programming language a year from now,as i have to balence learning Swift along with Python for my classes at school. </p>
         </div>
     </section>
-       
-</main>
+        <section class="post project">
+            <h2>Swift Project: To-Do List App</h2>
+            <div class="content">
+                <p>For a practical project, let's build a simple To-Do List app. This app will allow users to add and delete tasks.</p>
+                <p>Here's a basic outline:</p>
+                <ul>
+                    <li>Create a <code>Task</code> class or struct to represent a task.</li>
+                    <li>Use an array to store tasks.</li>
+                    <li>Implement functions to add and delete tasks.</li>
+                    <li>Display the list of tasks in the console.</li>
+                </ul>
+                <pre><code>struct Task {
+    var title: String
+    var isCompleted: Bool
+}
 
-    
+class ToDoList {
+    private var tasks: [Task] = []
+
+    func addTask(title: String) {
+        let newTask = Task(title: title, isCompleted: false)
+        tasks.append(newTask)
+    }
+
+    func removeTask(at index: Int) {
+        if index < tasks.count {
+            tasks.remove(at: index)
+        }
+    }
+
+    func listTasks() {
+        for (index, task) in tasks.enumerated() {
+            print("\(index + 1). \(task.title) - \(task.isCompleted ? "Completed" : "Pending")")
+        }
+    }
+}
+
+let myToDoList = ToDoList()
+myToDoList.addTask(title: "Finish Swift project")
+myToDoList.addTask(title: "Study for exams")
+myToDoList.listTasks()
+myToDoList.removeTask(at: 0)
+myToDoList.listTasks()</code></pre>
+            </div>
+        </section>
+
+        <section class="post project">
+            <h2>Swift Project: Basic Calculator</h2>
+            <div class="content">
+                <p>This project involves creating a simple calculator that can perform basic arithmetic operations like addition, subtraction, multiplication, and division.</p>
+                <p>Key features:</p>
+                <ul>
+                    <li>Input handling for two numbers and an operator.</li>
+                    <li>Perform the calculation based on the input operator.</li>
+                    <li>Display the result.</li>
+                </ul>
+                <pre><code>class Calculator {
+    func add(_ a: Double, _ b: Double) -> Double {
+        return a + b
+    }
+
+    func subtract(_ a: Double, _ b: Double) -> Double {
+        return a - b
+    }
+
+    func multiply(_ a: Double, _ b: Double) -> Double {
+        return a * b
+    }
+
+    func divide(_ a: Double, _ b: Double) -> Double? {
+        if b != 0 {
+            return a / b
+        } else {
+            return nil
+        }
+    }
+}
+
+let calculator = Calculator()
+if let result = calculator.divide(10, 2) {
+    print("Result: \(result)")
+} else {
+    print("Cannot divide by zero.")
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Additional Sections and Projects -->
+        <!-- Add more sections as needed, following the same structure -->
+
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
+
